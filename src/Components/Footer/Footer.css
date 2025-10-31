@@ -1,0 +1,158 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 30px;
+  color: white;
+  gap: 40px;
+}
+
+/* ---------- TOP SECTION ---------- */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* ---------- LEFT ---------- */
+.footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-left img {
+  width: 180px;   /* ✅ same fix as Navbar logo */
+  height: auto;
+}
+
+.footer-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  max-width: 400px;
+}
+
+/* ---------- RIGHT ---------- */
+.footer-top-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-email-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 18px;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease;
+}
+
+.footer-email-input:hover {
+  box-shadow: 0 0 20px rgba(180, 21, 255, 0.25);
+}
+
+.footer-email-input img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+  filter: brightness(0) invert(1);
+}
+
+.footer-email-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+/* ---------- Subscribe Button ---------- */
+.footer-subscribe {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-subscribe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(191, 64, 255, 0.3);
+}
+
+/* ---------- Divider ---------- */
+.footer hr {
+  width: 80%;
+  border: none;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- Bottom Section ---------- */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom-left {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-bottom-right p {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-right p:hover {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left p {
+    max-width: 90%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,238 @@
+/* ====== MAIN CONTACT SECTION ====== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 100px 0;
+  color: white;
+}
+
+/* ====== TITLE ====== */
+.contact-title {
+  position: relative;
+  text-align: center;
+}
+
+.contact-title h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.contact-title img {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* ====== MAIN CONTENT SECTION ====== */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* ====== LEFT SIDE ====== */
+.contactleft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 280px;
+}
+
+.contactleft h1 {
+  font-size: 40px;
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactleft p {
+  font-size: 18px;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.conatct-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.conatct-detail img {
+  width: 26px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.conatct-detail:hover img {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.conatct-detail p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* ====== RIGHT SIDE (FORM) ====== */
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 35px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  min-width: 300px;
+}
+
+.contact-right label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(191, 64, 255, 0.5);
+}
+
+.contact-right textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* ====== SUBMIT BUTTON ====== */
+.contact-submit {
+  margin-top: 10px;
+  padding: 14px 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.contact-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(191, 64, 255, 0.3);
+}
+
+/* ====== RESPONSIVENESS ====== */
+@media (max-width: 1024px) {
+  .contact-title h1 {
+    font-size: 60px;
+  }
+  .contact-section {
+    width: 90%;
+    gap: 40px;
+  }
+  .contactleft h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-title h1 {
+    font-size: 50px;
+  }
+
+  .contactleft h1 {
+    font-size: 30px;
+  }
+
+  .contact-right {
+    width: 100%;
+    padding: 28px 25px;
+  }
+
+  .contact-submit {
+    font-size: 16px;
+    padding: 12px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    gap: 60px;
+    margin: 70px 0;
+  }
+
+  .contact-title h1 {
+    font-size: 38px;
+  }
+
+  .contactleft h1 {
+    font-size: 26px;
+  }
+
+  .contactleft p {
+    font-size: 15px;
+  }
+
+  .conatct-detail p {
+    font-size: 14px;
+  }
+
+  .conatct-detail img {
+    width: 22px;
+  }
+
+  .contact-right {
+    padding: 22px;
+    border-radius: 15px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .contact-submit {
+    font-size: 15px;
+    padding: 12px 32px;
+  }
+}
